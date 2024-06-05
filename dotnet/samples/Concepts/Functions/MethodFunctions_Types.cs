@@ -60,7 +60,7 @@ public class MethodFunctions_Types(ITestOutputHelper output) : BaseTest(output)
         await kernel.InvokeAsync(kernel.Plugins["Examples"][nameof(LocalExamplePlugin.NoInputWithVoidResult)]);
     }
 }
-// Task functions when are imported as plugins loose the "Async" suffix if present.
+// Task functions imported as plugins lose the "Async" suffix if present.
 #pragma warning disable IDE1006 // Naming Styles
 
 public class LocalExamplePlugin(ITestOutputHelper output)
